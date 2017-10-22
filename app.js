@@ -26,7 +26,6 @@ document.querySelector('.btn-hold').addEventListener('click', updateGlobalScore)
 
 /* Methods */
 function rollDice() {
-
     if (gamePlaying) {
         // Random number between 1 - 6
         var dice = Math.floor(Math.random() * 6) + 1;
@@ -70,7 +69,6 @@ function resetCurrentScore() {
 }
 
 function updateGlobalScore() {
-
     if (gamePlaying) {
         // Add score to global score for active player
         score[activePlayer] += roundScore;
